@@ -1,0 +1,276 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    
+    
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    
+}
+
+.container-csf {
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50; /* Color corporativo oscuro */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1abc9c; /* Color verde para el hover */
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    min-height: 500px;
+    background-image: url("/IMG/WhatsApp\ Image\ 2024-11-07\ at\ 4.27.18\ PM\ \(1\).jpeg");
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+#hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#hero p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.btn-main {
+    background-color: #1abc9c;
+    padding: 12px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-main:hover {
+    background-color: #16a085;
+    transform: translateY(-3px);
+}
+
+/* Section */
+.section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Misión y Visión */
+.mision-vision-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.mision, .vision {
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+.mision h3, .vision h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.mision p, .vision p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Sponsors */
+#sponsors {
+    background-color: #2c3e50;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.sponsor-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.sponsor {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.sponsor img {
+    max-width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sponsor:hover img {
+    transform: scale(1.1);
+}
+
+/* Miembros */
+.mesa {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.mesa h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.mesa ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.mesa ul li {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    color: #34495e;
+}
+
+/* Galería */
+#galeria {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.1rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+.mesa-titulo{
+    margin-top: 30px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 15px;
+    }
+
+    .mision-vision-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mision, .vision {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
